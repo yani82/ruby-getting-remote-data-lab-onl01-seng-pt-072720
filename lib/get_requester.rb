@@ -5,6 +5,7 @@ class GetRequester
   
   def get_response_body 
     html = File.read('https://learn-co-curriculum.github.io/json-site-example/endpoints/people.json')
+    
   end 
   def create_project_hash
   html = File.read('fixtures/kickstarter.html')
