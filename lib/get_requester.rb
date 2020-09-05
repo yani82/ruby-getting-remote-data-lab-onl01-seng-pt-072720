@@ -16,6 +16,9 @@ class GetRequester
     response.body 
   end 
   
+   def parse_json 
+    data = File.read('https://learn-co-curriculum.github.io/json-site-example/endpoints/people.json')
+  
 
 url = "https://learn-co-curriculum.github.io/json-site-example/endpoints/people.json"
 uri = URI.parse(url)
@@ -25,8 +28,7 @@ response = Net::HTTP.get_response(uri)
 JSON.parse(response.body)
 
   
-  def parse_json 
-    http = File.read('https://learn-co-curriculum.github.io/json-site-example/endpoints/people.json')
+ 
     GetRequester = Net::HTTP(http)
 
     get_response_body = {}
