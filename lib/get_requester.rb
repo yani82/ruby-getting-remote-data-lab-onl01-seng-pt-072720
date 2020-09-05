@@ -5,6 +5,7 @@ uri = URI.parse(url)
 response = Net::HTTP.get_response(uri)
 
 require 'json'
+JSON.parse(response.body)
 
 class GetRequester
   
