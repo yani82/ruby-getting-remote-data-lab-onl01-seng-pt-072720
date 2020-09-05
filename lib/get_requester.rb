@@ -1,6 +1,7 @@
 require 'open-uri'
 require 'net/http'
-
+url = "https://learn-co-curriculum.github.io/json-site-example/"
+uri = URI.parse(url)
 
 class GetRequester
   
