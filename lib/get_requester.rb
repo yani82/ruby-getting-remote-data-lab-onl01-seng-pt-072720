@@ -4,6 +4,8 @@ url = "https://learn-co-curriculum.github.io/json-site-example/endpoints/people.
 uri = URI.parse(url)
 response = Net::HTTP.get_response(uri)
 
+require 'json'
+
 class GetRequester
   
   #is there an initialize method? 
