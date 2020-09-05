@@ -1,5 +1,5 @@
-require "nokogiri"
-require "pry"
+require "JSON"
+require ""
 
 class GetRequester
   
