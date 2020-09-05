@@ -8,17 +8,10 @@ class GetRequester
     GetRequester = Nokogiri::HTML(html)
   end 
  
-  projects = {}
+  data = {}
   
   def parse_json
-    
-  end 
-  
-end 
-
-
- 
-  kickstarter.css("li.project.grid_4").each do |project|
+    kickstarter.css("li.project.grid_4").each do |project|
     title = project.css("h2.bbcard_name strong a").text
     projects[title.to_sym] = {
       :image_link => project.css("div.project-thumbnail a img").attribute("src").value,
@@ -31,3 +24,12 @@ end
   # return the projects hash
   projects
 end
+
+    
+  end 
+  
+end 
+
+
+ 
+  
