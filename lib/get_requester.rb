@@ -16,8 +16,9 @@ class GetRequester
     response.body 
   end 
   
-   def parse_json 
+  def parse_json 
     data = JSON.parse(self.get_response_body)
+  end 
   
 
 url = "https://learn-co-curriculum.github.io/json-site-example/endpoints/people.json"
