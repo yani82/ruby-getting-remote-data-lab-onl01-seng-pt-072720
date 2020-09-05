@@ -3,10 +3,6 @@ require "pry"
 
 class GetRequester
   
-  def initialize()
-    
-  end 
-  
   def get_response_body 
     
   end 
