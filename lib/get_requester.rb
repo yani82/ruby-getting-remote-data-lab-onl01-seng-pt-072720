@@ -1,5 +1,5 @@
 require "JSON"
-require ""
+require "open-uri"
 
 class GetRequester
   
