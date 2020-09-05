@@ -2,6 +2,10 @@ require 'open-uri'
 require 'net/http'
 require 'json'
 
+class GetRequester
+  
+  attr_reader :uri 
+
 url = "https://learn-co-curriculum.github.io/json-site-example/endpoints/people.json"
 uri = URI.parse(url)
 response = Net::HTTP.get_response(uri)
@@ -9,7 +13,7 @@ response = Net::HTTP.get_response(uri)
 
 JSON.parse(response.body)
 
-class GetRequester
+
   
   #is there an initialize method? 
   
