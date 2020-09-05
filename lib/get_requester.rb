@@ -5,14 +5,14 @@ class GetRequester
   
   #is there an initialize method? 
   
-  def get_response_body 
+  def parse_json 
     http = File.read('https://learn-co-curriculum.github.io/json-site-example/endpoints/people.json')
     GetRequester = Net::HTTP(http)
   end 
  
 end 
 
-files = {}
+get_response_body = {}
   
     parse_json("li.project.grid_4").each do |files|
     title = project.css("h2.bbcard_name strong a").text
