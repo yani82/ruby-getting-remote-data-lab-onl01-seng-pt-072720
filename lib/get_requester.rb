@@ -5,6 +5,14 @@ require 'json'
 class GetRequester
   
   attr_reader :uri 
+  
+  def initialize(url)
+    @url = url 
+  end 
+  
+  def get_response_body 
+    
+  
 
 url = "https://learn-co-curriculum.github.io/json-site-example/endpoints/people.json"
 uri = URI.parse(url)
@@ -13,9 +21,6 @@ response = Net::HTTP.get_response(uri)
 
 JSON.parse(response.body)
 
-
-  
-  #is there an initialize method? 
   
   def parse_json 
     http = File.read('https://learn-co-curriculum.github.io/json-site-example/endpoints/people.json')
