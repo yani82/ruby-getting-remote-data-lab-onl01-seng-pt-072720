@@ -9,7 +9,7 @@ class GetRequester
     http = File.read('https://learn-co-curriculum.github.io/json-site-example/endpoints/people.json')
     GetRequester = Net::HTTP(http)
 
-get_response_body = {}
+    get_response_body = {}
   
      parse_json("li.project.grid_4").each do |files|
     title = project.css("h2.bbcard_name strong a").text
